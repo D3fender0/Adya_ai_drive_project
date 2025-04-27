@@ -1,0 +1,521 @@
+{
+	"info": {
+		"_postman_id": "36bb2d4e-9753-4198-90fe-e07bd5272b63",
+		"name": "testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44437564",
+		"_collection_link": "https://www.postman.com/vasanth-2254043/workspace/testing/collection/44437564-36bb2d4e-9753-4198-90fe-e07bd5272b63?action=share&source=collection_link&creator=44437564"
+	},
+	"item": [
+		{
+			"name": "check_200",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.tidio.com",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "/",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"api_key\":\"14bf635518e29749ea5c9a26eef7294c\",\"events\":[{\"user_id\":\"4039133\",\"device_id\":\"3b38fbc9-fb98-4f6d-9550-f3f6c1555a32\",\"session_id\":1745723101382,\"time\":1745724035560,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"88a4fc52-476f-4ec0-b923-d485aebf089e\",\"event_type\":\"Lyro: Playground Message From Visitor Send\",\"event_properties\":{\"app\":\"web\",\"source\":\"live-chat\"},\"event_id\":1247,\"library\":\"amplitude-ts/2.11.12\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0\"}],\"options\":{},\"client_upload_time\":\"2025-04-27T03:20:37.285Z\",\"request_metadata\":{\"sdk\":{\"metrics\":{\"histogram\":{}}}}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://amp1.tidio.com/2/httpapi",
+					"protocol": "https",
+					"host": [
+						"amp1",
+						"tidio",
+						"com"
+					],
+					"path": [
+						"2",
+						"httpapi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bulk_event_array",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.tidio.com",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "/",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"api_key\":\"14bf635518e29749ea5c9a26eef7294c\",\"events\":[{\"user_id\":\"4039133\",\"device_id\":\"3b38fbc9-fb98-4f6d-9550-f3f6c1555a32\",\"session_id\":1745723101382,\"time\":1745724035560,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"88a4fc52-476f-4ec0-b923-d485aebf089e\",\"event_type\":\"Lyro: Playground Message From Visitor Send\",\"event_properties\":{\"app\":\"web\",\"source\":\"live-chat\"},\"event_id\":1247,\"library\":\"amplitude-ts/2.11.12\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0\"}],\"options\":{},\"client_upload_time\":\"2025-04-27T03:20:37.285Z\",\"request_metadata\":{\"sdk\":{\"metrics\":{\"histogram\":{}}}}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://amp1.tidio.com/2/httpapi",
+					"protocol": "https",
+					"host": [
+						"amp1",
+						"tidio",
+						"com"
+					],
+					"path": [
+						"2",
+						"httpapi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wrong_api_key_test",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.tidio.com",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "/",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"api_key\":\"14bf635518e29749ea5c9a26eef7294c\",\"events\":[{\"user_id\":\"4039133\",\"device_id\":\"3b38fbc9-fb98-4f6d-9550-f3f6c1555a32\",\"session_id\":1745723101382,\"time\":1745724035560,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"88a4fc52-476f-4ec0-b923-d485aebf089e\",\"event_type\":\"Lyro: Playground Message From Visitor Send\",\"event_properties\":{\"app\":\"web\",\"source\":\"live-chat\"},\"event_id\":1247,\"library\":\"amplitude-ts/2.11.12\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0\"}],\"options\":{},\"client_upload_time\":\"2025-04-27T03:20:37.285Z\",\"request_metadata\":{\"sdk\":{\"metrics\":{\"histogram\":{}}}}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://amp1.tidio.com/2/httpapi",
+					"protocol": "https",
+					"host": [
+						"amp1",
+						"tidio",
+						"com"
+					],
+					"path": [
+						"2",
+						"httpapi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removing_event_field",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.tidio.com",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "/",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"api_key\":\"14bf635518e29749ea5c9a26eef7294c\",\"events\":[{\"user_id\":\"4039133\",\"device_id\":\"3b38fbc9-fb98-4f6d-9550-f3f6c1555a32\",\"session_id\":1745723101382,\"time\":1745724035560,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"88a4fc52-476f-4ec0-b923-d485aebf089e\",\"event_type\":\"Lyro: Playground Message From Visitor Send\",\"event_properties\":{\"app\":\"web\",\"source\":\"live-chat\"},\"event_id\":1247,\"library\":\"amplitude-ts/2.11.12\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0\"}],\"options\":{},\"client_upload_time\":\"2025-04-27T03:20:37.285Z\",\"request_metadata\":{\"sdk\":{\"metrics\":{\"histogram\":{}}}}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://amp1.tidio.com/2/httpapi",
+					"protocol": "https",
+					"host": [
+						"amp1",
+						"tidio",
+						"com"
+					],
+					"path": [
+						"2",
+						"httpapi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "empty_request_body",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.tidio.com",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "/",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"api_key\":\"14bf635518e29749ea5c9a26eef7294c\",\"events\":[{\"user_id\":\"4039133\",\"device_id\":\"3b38fbc9-fb98-4f6d-9550-f3f6c1555a32\",\"session_id\":1745723101382,\"time\":1745724035560,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"88a4fc52-476f-4ec0-b923-d485aebf089e\",\"event_type\":\"Lyro: Playground Message From Visitor Send\",\"event_properties\":{\"app\":\"web\",\"source\":\"live-chat\"},\"event_id\":1247,\"library\":\"amplitude-ts/2.11.12\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0\"}],\"options\":{},\"client_upload_time\":\"2025-04-27T03:20:37.285Z\",\"request_metadata\":{\"sdk\":{\"metrics\":{\"histogram\":{}}}}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://amp1.tidio.com/2/httpapi",
+					"protocol": "https",
+					"host": [
+						"amp1",
+						"tidio",
+						"com"
+					],
+					"path": [
+						"2",
+						"httpapi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Extremely large body",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.tidio.com",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "/",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"api_key\":\"14bf635518e29749ea5c9a26eef7294c\",\"events\":[{\"user_id\":\"4039133\",\"device_id\":\"3b38fbc9-fb98-4f6d-9550-f3f6c1555a32\",\"session_id\":1745723101382,\"time\":1745724035560,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"88a4fc52-476f-4ec0-b923-d485aebf089e\",\"event_type\":\"Lyro: Playground Message From Visitor Send\",\"event_properties\":{\"app\":\"web\",\"source\":\"live-chat\"},\"event_id\":1247,\"library\":\"amplitude-ts/2.11.12\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0\"}],\"options\":{},\"client_upload_time\":\"2025-04-27T03:20:37.285Z\",\"request_metadata\":{\"sdk\":{\"metrics\":{\"histogram\":{}}}}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://amp1.tidio.com/2/httpapi",
+					"protocol": "https",
+					"host": [
+						"amp1",
+						"tidio",
+						"com"
+					],
+					"path": [
+						"2",
+						"httpapi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "old_timestamp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.tidio.com",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "/",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"api_key\":\"14bf635518e29749ea5c9a26eef7294c\",\"events\":[{\"user_id\":\"4039133\",\"device_id\":\"3b38fbc9-fb98-4f6d-9550-f3f6c1555a32\",\"session_id\":1745723101382,\"time\":1745724035560,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"88a4fc52-476f-4ec0-b923-d485aebf089e\",\"event_type\":\"Lyro: Playground Message From Visitor Send\",\"event_properties\":{\"app\":\"web\",\"source\":\"live-chat\"},\"event_id\":1247,\"library\":\"amplitude-ts/2.11.12\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0\"}],\"options\":{},\"client_upload_time\":\"2025-04-27T03:20:37.285Z\",\"request_metadata\":{\"sdk\":{\"metrics\":{\"histogram\":{}}}}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://amp1.tidio.com/2/httpapi",
+					"protocol": "https",
+					"host": [
+						"amp1",
+						"tidio",
+						"com"
+					],
+					"path": [
+						"2",
+						"httpapi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "broken_json",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.tidio.com",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "/",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"api_key\":\"14bf635518e29749ea5c9a26eef7294c\",\"events\":[{\"user_id\":\"4039133\",\"device_id\":\"3b38fbc9-fb98-4f6d-9550-f3f6c1555a32\",\"session_id\":1745723101382,\"time\":1745724035560,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"88a4fc52-476f-4ec0-b923-d485aebf089e\",\"event_type\":\"Lyro: Playground Message From Visitor Send\",\"event_properties\":{\"app\":\"web\",\"source\":\"live-chat\"},\"event_id\":1247,\"library\":\"amplitude-ts/2.11.12\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0\"}],\"options\":{},\"client_upload_time\":\"2025-04-27T03:20:37.285Z\",\"request_metadata\":{\"sdk\":{\"metrics\":{\"histogram\":{}}}}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://amp1.tidio.com/2/httpapi",
+					"protocol": "https",
+					"host": [
+						"amp1",
+						"tidio",
+						"com"
+					],
+					"path": [
+						"2",
+						"httpapi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unexpected_event_fields",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.tidio.com",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "/",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"api_key\":\"14bf635518e29749ea5c9a26eef7294c\",\"events\":[{\"user_id\":\"4039133\",\"device_id\":\"3b38fbc9-fb98-4f6d-9550-f3f6c1555a32\",\"session_id\":1745723101382,\"time\":1745724035560,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"88a4fc52-476f-4ec0-b923-d485aebf089e\",\"event_type\":\"Lyro: Playground Message From Visitor Send\",\"event_properties\":{\"app\":\"web\",\"source\":\"live-chat\"},\"event_id\":1247,\"library\":\"amplitude-ts/2.11.12\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0\"}],\"options\":{},\"client_upload_time\":\"2025-04-27T03:20:37.285Z\",\"request_metadata\":{\"sdk\":{\"metrics\":{\"histogram\":{}}}}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://amp1.tidio.com/2/httpapi",
+					"protocol": "https",
+					"host": [
+						"amp1",
+						"tidio",
+						"com"
+					],
+					"path": [
+						"2",
+						"httpapi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wrong_data_types",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.tidio.com",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "/",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"api_key\":\"14bf635518e29749ea5c9a26eef7294c\",\"events\":[{\"user_id\":\"4039133\",\"device_id\":\"3b38fbc9-fb98-4f6d-9550-f3f6c1555a32\",\"session_id\":1745723101382,\"time\":1745724035560,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"88a4fc52-476f-4ec0-b923-d485aebf089e\",\"event_type\":\"Lyro: Playground Message From Visitor Send\",\"event_properties\":{\"app\":\"web\",\"source\":\"live-chat\"},\"event_id\":1247,\"library\":\"amplitude-ts/2.11.12\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0\"}],\"options\":{},\"client_upload_time\":\"2025-04-27T03:20:37.285Z\",\"request_metadata\":{\"sdk\":{\"metrics\":{\"histogram\":{}}}}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://amp1.tidio.com/2/httpapi",
+					"protocol": "https",
+					"host": [
+						"amp1",
+						"tidio",
+						"com"
+					],
+					"path": [
+						"2",
+						"httpapi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
