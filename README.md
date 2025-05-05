@@ -1,8 +1,4 @@
-# Hello everyone, 👋
 
-This is Vasanthabalan from the Cyber Security Department at Sri Shakthi Institute of Engineering and Technology.
-I have tested the Tido AI chatbot, which is based on an NLP model called Lyro.
-During testing, I performed functional testing, UI/UX testing, load testing, API testing, and created a security checklist.
 
 ## ✅ Functional Testing
 
